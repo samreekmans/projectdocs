@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prototyping Logboek - Les 1</title>
+    <title>Prototyping Logboek - Les 3</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
@@ -26,96 +26,131 @@
         <div class="bg-white shadow-lg rounded-xl p-8 space-y-6 hover:shadow-2xl transition">
 
             <h1 class="text-3xl font-bold text-gray-900">Low-fi prototypes</h1>
-
-            <p class="leading-relaxed">
+            <p>
                 Deze week heb ik low-fidelity schetsen gemaakt voor een nieuw ontwerp van de treinschermen in de stations in België. Hierbij heb ik de focus gelegd op gebruiksvriendelijk, duidelijk en meertalig ontwerp. Hieronder beschrijf ik mijn proces.
             </p>
 
-            <h2 class="text-2xl font-semibold mt-4">Hoe begon ik eraan?</h2>
-            <p class="leading-relaxed">
+            <h2 class="text-2xl font-semibold">Hoe begon ik eraan?</h2>
+            <p>
                 Ik heb foto’s genomen van de schermen in het station van Antwerpen om te analyseren wat beter kon. Daarnaast vroeg ik aan mijn mama en een vriendin wat zij niet duidelijk vonden. Dit noteerde ik dan samen met mijn eigen observatie. Hieruit kwam ik tot volgende verbeterpunten:
             </p>
-            <ul class="list-disc ml-6 text-gray-700">
+            <ul class="list-disc ml-6">
                 <li>Onduidelijke informatie</li>
                 <li>Te druk ontwerp</li>
                 <li>Moeilijke leesbaarheid</li>
                 <li>Gebrek aan visuele ondersteuning (iconen)</li>
             </ul>
-            <p class="leading-relaxed">Hierdoor besloot ik om bij mijn eigen ontwerp te focussen op duidelijkheid, hiërarchie en eenvoud.</p>
+            <p>Hierdoor besloot ik om bij mijn eigen ontwerp te focussen op duidelijkheid, hiërarchie en eenvoud.</p>
 
-            <h2 class="text-2xl font-semibold mt-4">1. Overzichtsscherm</h2>
-            <h3 class="text-lg font-semibold mt-2">Wat ik deed:</h3>
-            <p class="leading-relaxed">
-                Ik begon met het ontwerpen van het overzichtsscherm, waarin alle vertrekkende treinen worden weergegeven. Eerst bepaalde ik welke informatie meteen zichtbaar moest zijn en welke onderdelen meer ondersteunend waren. Daarnaast deed ik gericht onderzoek naar iconen die de inhoud visueel konden versterken, zodat de interface minder afhankelijk is van tekst en informatie snel te begrijpen is.
-            </p>
+            <h2 class="text-2xl font-semibold">1. Overzichtsscherm</h2>
+            <h3 class="text-lg font-semibold">Wat ik deed:</h3>
+            <p>Ik begon met het ontwerpen van het overzichtsscherm, waarin alle vertrekkende treinen worden weergegeven. Eerst bepaalde ik welke informatie meteen zichtbaar moest zijn en welke onderdelen meer ondersteunend waren. Daarnaast deed ik gericht onderzoek naar iconen die de inhoud visueel konden versterken, zodat de interface minder afhankelijk is van tekst en informatie snel te begrijpen is.</p>
 
-            <h3 class="text-lg font-semibold mt-2">Wat ik veranderde en waarom:</h3>
-            <p class="leading-relaxed">
-                Ik koos duidelijke, minimalistische iconen om de tekst te ondersteunen en de interface minder tekstafhankelijk te maken.
-            </p>
+            <h3 class="text-lg font-semibold">Wat ik veranderde en waarom:</h3>
+            <p>Ik koos duidelijke, minimalistische iconen om de tekst te ondersteunen en de interface minder tekstafhankelijk te maken.</p>
 
-            <h3 class="text-lg font-semibold mt-2">UX/UI-vragen:</h3>
-            <ul class="list-disc ml-6 text-gray-700">
+            <h3 class="text-lg font-semibold">UX/UI-vragen:</h3>
+            <ul class="list-disc ml-6">
                 <li>Welke iconen begrijpen gebruikers intuïtief?</li>
                 <li>Hoeveel tekst is nodig naast een icoon?</li>
             </ul>
 
-            <h3 class="text-lg font-semibold mt-2">Usability check:</h3>
-            <p class="leading-relaxed">
-                Na mijn eerste schets vroeg ik feedback aan mijn mama. Ze vond sommige iconen niet direct duidelijk. Ik paste die aan naar meer herkenbare versies (zoals standaard OV-pictogrammen).
-            </p>
+            <h3 class="text-lg font-semibold">Usability check:</h3>
+            <p>Na mijn eerste schets vroeg ik feedback aan mijn mama. Ze vond sommige iconen niet direct duidelijk. Ik paste die aan naar meer herkenbare versies (zoals standaard OV-pictogrammen).</p>
 
-            <img src="image/schetsen overzichtsscherm.png" class="rounded-lg shadow-md" />
+           
+        <label class="cursor-pointer flex flex-col w-fit items-center gap-2">
+         <input type="checkbox" class="hidden peer" />
 
+        <img src="image/schetsen overzichtsscherm.png"
+        class="
+          rounded-lg shadow-md transition-all duration-300
+          w-40
+          hover:scale-105 hover:shadow-lg
+          peer-checked:w-[600px] peer-checked:max-w-full peer-checked:hover:scale-100
+         " />
+
+        <span class="text-sm text-gray-500 transition peer-checked:hidden">
+        👉 Klik om te vergroten
+        </span>
+
+        <span class="text-sm text-gray-500 hidden peer-checked:block">
+        👈 Klik opnieuw om te verkleinen
+        </span>
+        </label>
+  
             <h2 class="text-2xl font-semibold mt-6">2. Perronscherm</h2>
-            <h3 class="text-lg font-semibold mt-2">Wat ik deed:</h3>
-            <p class="leading-relaxed">
-                Ik begon met ontwerpen van het perronscherm, geïnspireerd op schermen die ik tijdens een treinreis naar Frankrijk zag. Die voorbeelden hielpen me bepalen welke informatie reizigers het snelst willen zien en hoe deze het overzichtelijkst gepresenteerd konden worden.
-            </p>
+            <h3 class="text-lg font-semibold">Wat ik deed:</h3>
+            <p>Ik begon met ontwerpen van het perronscherm, geïnspireerd op schermen die ik tijdens een treinreis naar Frankrijk zag. Die voorbeelden hielpen me bepalen welke informatie reizigers het snelst willen zien en hoe deze het overzichtelijkst gepresenteerd konden worden.</p>
 
-            <h3 class="text-lg font-semibold mt-2">Wat ik veranderde en waarom:</h3>
-            <p class="leading-relaxed">
-                Ik verfijnde de opmaak en voegde extra elementen toe, zoals realtime vertragingen en een duidelijke statusaanduiding, op basis van feedback en advies van ChatGPT.
-            </p>
+            <h3 class="text-lg font-semibold">Wat ik veranderde en waarom:</h3>
+            <p>Ik verfijnde de opmaak en voegde ik extra elementen toe, zoals realtime vertragingen en een duidelijke statusaanduiding, op basis van feedback en advies van ChatGPT.</p>
 
-            <h3 class="text-lg font-semibold mt-2">UX/UI-vragen:</h3>
-            <ul class="list-disc ml-6 text-gray-700">
+            <h3 class="text-lg font-semibold">UX/UI-vragen:</h3>
+            <ul class="list-disc ml-6">
                 <li>Hoe kan ik realtime updates (vertragingen, spoorwijzigingen) duidelijk en snel zichtbaar maken?</li>
                 <li>Hoeveel details kunnen getoond worden zonder dat het scherm overweldigend wordt?</li>
             </ul>
 
-            <h3 class="text-lg font-semibold mt-2">Usability check:</h3>
-            <p class="leading-relaxed">
-                Ik vroeg feedback aan mijn mama op mijn eerste schets. Ze merkte op dat een aantal details ontbraken, waardoor ik de opmaak verbeterde en extra elementen toevoegde om het scherm completer en gebruiksvriendelijker te maken.
-            </p>
+            <h3 class="text-lg font-semibold">Usability check:</h3>
+            <p>Ik vroeg feedback aan mijn mama op mijn eerste schets. Ze merkte op dat een aantal details ontbraken, waardoor ik de opmaak verbeterde en extra elementen toevoegde om het scherm completer en gebruiksvriendelijker te maken.</p>
 
-            <img src="image/schetsen perronscherm.png" class="rounded-lg shadow-md" />
+         <label class="cursor-pointer flex flex-col w-fit items-center gap-2">
+         <input type="checkbox" class="hidden peer" />
+
+        <img src="image/schetsen perronscherm.png"
+        class="
+          rounded-lg shadow-md transition-all duration-300
+          w-40
+          hover:scale-105 hover:shadow-lg
+          peer-checked:w-[600px] peer-checked:max-w-full peer-checked:hover:scale-100
+         " />
+
+        <span class="text-sm text-gray-500 transition peer-checked:hidden">
+        👉 Klik om te vergroten
+        </span>
+
+        <span class="text-sm text-gray-500 hidden peer-checked:block">
+        👈 Klik opnieuw om te verkleinen
+        </span>
+        </label>
 
             <h2 class="text-2xl font-semibold mt-6">3. Wagonscherm</h2>
-            <h3 class="text-lg font-semibold mt-2">Wat ik deed:</h3>
-            <p class="leading-relaxed">
-                Ik begon met het ontwerpen van het wagonscherm dat duidelijk toont waar reizigers zich bevinden in de trein. Het ontwerp werkte ik uit vanuit mijn eigen idee om de oriëntatie onderweg te verbeteren, bijvoorbeeld door aan te geven waar de stiltecoupé, de fietszone of de eersteklasafdeling zich bevinden.
-            </p>
+            <h3 class="text-lg font-semibold">Wat ik deed:</h3>
+            <p>Ik begon met het ontwerpen van het wagonscherm dat duidelijk toont waar reizigers zich bevinden in de trein. Het ontwerp werkte ik uit vanuit mijn eigen idee om de oriëntatie onderweg te verbeteren, bijvoorbeeld door aan te geven waar de stiltecoupé, de fietszone of de eersteklasafdeling zich bevinden.</p>
 
-            <h3 class="text-lg font-semibold mt-2">Wat ik veranderde en waarom:</h3>
-            <p class="leading-relaxed">
-                Ik maakte de informatie visueel toegankelijk zodat reizigers snel kunnen zien in welk deel van de trein ze zitten en welke voorzieningen in de nabije wagons beschikbaar zijn. Dit helpt bij het vinden van een geschikte plek, zorgt voor een rustiger instapproces en biedt meer overzicht tijdens de rit.
-            </p>
+            <h3 class="text-lg font-semibold">Wat ik veranderde en waarom:</h3>
+            <p>Ik maakte de informatie visueel toegankelijk zodat reizigers snel kunnen zien in welk deel van de trein ze zitten en welke voorzieningen in de nabije wagons beschikbaar zijn. Dit helpt bij het vinden van een geschikte plek, zorgt voor een rustiger instapproces en biedt meer overzicht tijdens de rit.</p>
 
-            <h3 class="text-lg font-semibold mt-2">UX/UI-vragen:</h3>
-            <ul class="list-disc ml-6 text-gray-700">
+            <h3 class="text-lg font-semibold">UX/UI-vragen:</h3>
+            <ul class="list-disc ml-6">
                 <li>Hoe kunnen reizigers in één oogopslag zien waar ze zich bevinden in de trein?</li>
             </ul>
 
-            <h3 class="text-lg font-semibold mt-2">Usability check:</h3>
-            <p class="leading-relaxed">
-                Ik vroeg feedback aan mijn mama over de leesbaarheid en indeling en paste de schermen opnieuw aan (meer ruimte tussen secties, grotere labels).
-            </p>
+            <h3 class="text-lg font-semibold">Usability check:</h3>
+            <p>Ik vroeg feedback aan mijn mama over de leesbaarheid en indeling en paste de schermen opnieuw aan (meer ruimte tussen secties, grotere labels).</p>
 
-            <img src="image/schetsen wagonscherm.png" class="rounded-lg shadow-md" />
+        <label class="cursor-pointer flex flex-col w-fit items-center gap-2">
+         <input type="checkbox" class="hidden peer" />
+
+        <img src="image/schetsen wagonscherm.png"
+        class="
+          rounded-lg shadow-md transition-all duration-300
+          w-40
+          hover:scale-105 hover:shadow-lg
+          peer-checked:w-[600px] peer-checked:max-w-full peer-checked:hover:scale-100
+         " />
+
+        <span class="text-sm text-gray-500 transition peer-checked:hidden">
+        👉 Klik om te vergroten
+        </span>
+
+        <span class="text-sm text-gray-500 hidden peer-checked:block">
+        👈 Klik opnieuw om te verkleinen
+        </span>
+        </label>
 
         </div>
     </div>
-
 </body>
 </html>

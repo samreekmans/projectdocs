@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prototyping Logboek - Les 2</title>
+    <title>Prototyping Logboek - Les 3</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
@@ -26,37 +26,47 @@
         <div class="bg-white shadow-lg rounded-xl p-8 space-y-6 hover:shadow-2xl transition">
 
             <h1 class="text-3xl font-bold text-gray-900">Mid-fi prototypes</h1>
-
-            <p class="leading-relaxed">
+            <p>
                 Deze week werkte ik mijn low-fidelity schetsen om tot mid-fidelity schermen in Figma. Daarbij lag de focus op het verfijnen van de structuur en het nauwkeuriger bepalen van de verhoudingen tussen de verschillende elementen. Ik zorgde ervoor dat de informatie logisch gegroepeerd bleef en dat de schermen al dichter in de richting kwamen van een echt eindontwerp.
             </p>
 
-            
-            <h3 class="text-lg font-semibold mt-2">Wat ik deed:</h3>
-            <p class="leading-relaxed">
-                Ik begon met het ontwerpen van mijn idee voor het overzichtsscherm. Ik had vooraf al een kleurencombinatie in gedachten en werkte deze uit in een eerste versie van het ontwerp.
-            </p>
+            <h2 class="text-2xl font-semibold mt-4">Overzichtsscherm</h2>
+            <h3 class="text-lg font-semibold">Wat ik deed:</h3>
+            <p>Ik begon met het ontwerpen van mijn idee voor het overzichtsscherm. Ik had vooraf al een kleurencombinatie in gedachten en werkte deze uit in een eerste versie van het ontwerp.</p>
 
-            <h3 class="text-lg font-semibold mt-2">Wat ik veranderde en waarom:</h3>
-            <p class="leading-relaxed">
-                Dit was mijn eerste versie; ik had nog niet echt iets veranderd en wilde eerst feedback krijgen in de les.
-            </p>
+            <h3 class="text-lg font-semibold">Wat ik veranderde en waarom:</h3>
+            <p>Dit was mijn eerste versie; ik had nog niet echt iets veranderd en wilde eerst feedback krijgen in de les.</p>
 
-            <h3 class="text-lg font-semibold mt-2">UX/UI-vragen:</h3>
-            <ul class="list-disc ml-6 text-gray-700">
+            <h3 class="text-lg font-semibold">UX/UI-vragen:</h3>
+            <ul class="list-disc ml-6">
                 <li>Hoe zorg ik ervoor dat de belangrijkste informatie (tijd, vertraging, spoor) direct zichtbaar is?</li>
                 <li>Hoeveel kleurvariatie is bruikbaar voordat het afleidt?</li>
             </ul>
 
-            <h3 class="text-lg font-semibold mt-2">Usability check:</h3>
-            <p class="leading-relaxed">
-                Na observatie en feedback bleek dat gebruikers vooral behoefte hadden aan snelle herkenning van vertrekuren, perrons en vertragingen.
-            </p>
+            <h3 class="text-lg font-semibold">Usability check:</h3>
+            <p>Na observatie en feedback bleek dat gebruikers vooral behoefte hadden aan snelle herkenning van vertrekuren, perrons en vertragingen.</p>
 
-            <img src="image/overzichtsscherm 1.png" class="rounded-lg shadow-md" />
+         <label class="cursor-pointer flex flex-col w-fit items-center gap-2">
+         <input type="checkbox" class="hidden peer" />
+
+        <img src="image/overzichtsscherm 1.png"
+        class="
+          rounded-lg shadow-md transition-all duration-300
+          w-40
+          hover:scale-105 hover:shadow-lg
+          peer-checked:w-[600px] peer-checked:max-w-full peer-checked:hover:scale-100
+         " />
+
+        <span class="text-sm text-gray-500 transition peer-checked:hidden">
+        👉 Klik om te vergroten
+        </span>
+
+        <span class="text-sm text-gray-500 hidden peer-checked:block">
+        👈 Klik opnieuw om te verkleinen
+        </span>
+        </label>
 
         </div>
     </div>
-
 </body>
 </html>
