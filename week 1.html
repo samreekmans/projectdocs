@@ -1,134 +1,121 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML & CSS</title>
-
-    <!-- Link to your CSS file -->
-    <link rel="stylesheet" href="assets/styles.css">
-    <link rel="stylesheet" href="assets/flexboxes.css">
-    <link rel="stylesheet" href="assets/nav.css">
-    <link rel="stylesheet" href="assets/typography.css">
+    <title>Prototyping Logboek - Les 1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: "Poppins", sans-serif; }
+    </style>
 </head>
-<body>
-    <div class="container">
-        <div class="title">
-            Prototyping tool
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigation -->
+    <nav class="w-full bg-white shadow-md py-4 px-6 flex items-center justify-between fixed top-0 left-0 z-50">
+        <h1 class="text-xl font-bold text-pink-600">Prototyping Tool</h1>
+        <a href="index.html" class="bg-pink-600 text-white px-4 py-2 rounded-lg hover:bg-pink-700 transition">Home</a>
+    </nav>
+
+    <div class="container mx-auto pt-24 px-6 max-w-4xl space-y-8">
+
+        <div class="text-4xl font-bold text-gray-900">Logboek</div>
+        <div class="text-2xl font-semibold text-pink-500">Les 1</div>  
+
+        <div class="bg-white shadow-lg rounded-xl p-8 space-y-6 hover:shadow-2xl transition">
+
+            <h1 class="text-3xl font-bold text-gray-900">Low-fi prototypes</h1>
+
+            <p class="leading-relaxed">
+                Deze week heb ik low-fidelity schetsen gemaakt voor een nieuw ontwerp van de treinschermen in de stations in België. Hierbij heb ik de focus gelegd op gebruiksvriendelijk, duidelijk en meertalig ontwerp. Hieronder beschrijf ik mijn proces.
+            </p>
+
+            <h2 class="text-2xl font-semibold mt-4">Hoe begon ik eraan?</h2>
+            <p class="leading-relaxed">
+                Ik heb foto’s genomen van de schermen in het station van Antwerpen om te analyseren wat beter kon. Daarnaast vroeg ik aan mijn mama en een vriendin wat zij niet duidelijk vonden. Dit noteerde ik dan samen met mijn eigen observatie. Hieruit kwam ik tot volgende verbeterpunten:
+            </p>
+            <ul class="list-disc ml-6 text-gray-700">
+                <li>Onduidelijke informatie</li>
+                <li>Te druk ontwerp</li>
+                <li>Moeilijke leesbaarheid</li>
+                <li>Gebrek aan visuele ondersteuning (iconen)</li>
+            </ul>
+            <p class="leading-relaxed">Hierdoor besloot ik om bij mijn eigen ontwerp te focussen op duidelijkheid, hiërarchie en eenvoud.</p>
+
+            <h2 class="text-2xl font-semibold mt-4">1. Overzichtsscherm</h2>
+            <h3 class="text-lg font-semibold mt-2">Wat ik deed:</h3>
+            <p class="leading-relaxed">
+                Ik begon met het ontwerpen van het overzichtsscherm, waarin alle vertrekkende treinen worden weergegeven. Eerst bepaalde ik welke informatie meteen zichtbaar moest zijn en welke onderdelen meer ondersteunend waren. Daarnaast deed ik gericht onderzoek naar iconen die de inhoud visueel konden versterken, zodat de interface minder afhankelijk is van tekst en informatie snel te begrijpen is.
+            </p>
+
+            <h3 class="text-lg font-semibold mt-2">Wat ik veranderde en waarom:</h3>
+            <p class="leading-relaxed">
+                Ik koos duidelijke, minimalistische iconen om de tekst te ondersteunen en de interface minder tekstafhankelijk te maken.
+            </p>
+
+            <h3 class="text-lg font-semibold mt-2">UX/UI-vragen:</h3>
+            <ul class="list-disc ml-6 text-gray-700">
+                <li>Welke iconen begrijpen gebruikers intuïtief?</li>
+                <li>Hoeveel tekst is nodig naast een icoon?</li>
+            </ul>
+
+            <h3 class="text-lg font-semibold mt-2">Usability check:</h3>
+            <p class="leading-relaxed">
+                Na mijn eerste schets vroeg ik feedback aan mijn mama. Ze vond sommige iconen niet direct duidelijk. Ik paste die aan naar meer herkenbare versies (zoals standaard OV-pictogrammen).
+            </p>
+
+            <img src="image/schetsen overzichtsscherm.png" class="rounded-lg shadow-md" />
+
+            <h2 class="text-2xl font-semibold mt-6">2. Perronscherm</h2>
+            <h3 class="text-lg font-semibold mt-2">Wat ik deed:</h3>
+            <p class="leading-relaxed">
+                Ik begon met ontwerpen van het perronscherm, geïnspireerd op schermen die ik tijdens een treinreis naar Frankrijk zag. Die voorbeelden hielpen me bepalen welke informatie reizigers het snelst willen zien en hoe deze het overzichtelijkst gepresenteerd konden worden.
+            </p>
+
+            <h3 class="text-lg font-semibold mt-2">Wat ik veranderde en waarom:</h3>
+            <p class="leading-relaxed">
+                Ik verfijnde de opmaak en voegde extra elementen toe, zoals realtime vertragingen en een duidelijke statusaanduiding, op basis van feedback en advies van ChatGPT.
+            </p>
+
+            <h3 class="text-lg font-semibold mt-2">UX/UI-vragen:</h3>
+            <ul class="list-disc ml-6 text-gray-700">
+                <li>Hoe kan ik realtime updates (vertragingen, spoorwijzigingen) duidelijk en snel zichtbaar maken?</li>
+                <li>Hoeveel details kunnen getoond worden zonder dat het scherm overweldigend wordt?</li>
+            </ul>
+
+            <h3 class="text-lg font-semibold mt-2">Usability check:</h3>
+            <p class="leading-relaxed">
+                Ik vroeg feedback aan mijn mama op mijn eerste schets. Ze merkte op dat een aantal details ontbraken, waardoor ik de opmaak verbeterde en extra elementen toevoegde om het scherm completer en gebruiksvriendelijker te maken.
+            </p>
+
+            <img src="image/schetsen perronscherm.png" class="rounded-lg shadow-md" />
+
+            <h2 class="text-2xl font-semibold mt-6">3. Wagonscherm</h2>
+            <h3 class="text-lg font-semibold mt-2">Wat ik deed:</h3>
+            <p class="leading-relaxed">
+                Ik begon met het ontwerpen van het wagonscherm dat duidelijk toont waar reizigers zich bevinden in de trein. Het ontwerp werkte ik uit vanuit mijn eigen idee om de oriëntatie onderweg te verbeteren, bijvoorbeeld door aan te geven waar de stiltecoupé, de fietszone of de eersteklasafdeling zich bevinden.
+            </p>
+
+            <h3 class="text-lg font-semibold mt-2">Wat ik veranderde en waarom:</h3>
+            <p class="leading-relaxed">
+                Ik maakte de informatie visueel toegankelijk zodat reizigers snel kunnen zien in welk deel van de trein ze zitten en welke voorzieningen in de nabije wagons beschikbaar zijn. Dit helpt bij het vinden van een geschikte plek, zorgt voor een rustiger instapproces en biedt meer overzicht tijdens de rit.
+            </p>
+
+            <h3 class="text-lg font-semibold mt-2">UX/UI-vragen:</h3>
+            <ul class="list-disc ml-6 text-gray-700">
+                <li>Hoe kunnen reizigers in één oogopslag zien waar ze zich bevinden in de trein?</li>
+            </ul>
+
+            <h3 class="text-lg font-semibold mt-2">Usability check:</h3>
+            <p class="leading-relaxed">
+                Ik vroeg feedback aan mijn mama over de leesbaarheid en indeling en paste de schermen opnieuw aan (meer ruimte tussen secties, grotere labels).
+            </p>
+
+            <img src="image/schetsen wagonscherm.png" class="rounded-lg shadow-md" />
+
         </div>
-        <h1>Logboek</h1>
-        <div>
-            <ul class="vertical-buttons">
-                <li><a href="week 1.html">les 1 & les 2</a></li>
-              
-
-            </ul>
-        </div>
-        <page>
-            <h1>Low-fi prototypes</h1>
-            <h2>1. OBSERVATIE</h2>
-            <p>
-               Wat ik deed:
-               Ik heb foto’s genomen van de schermen in het station van Antwerpen om te analyseren wat beter kon. Daarnaast vroeg ik aan mijn mama en een vriendin wat zij niet duidelijk vonden
-            </p>
-            Wat ik veranderde en waarom:
-            Uit hun feedback bleek dat bepaalde informatie op de schermen onduidelijk of te druk was. Ik besloot om bij mijn eigen ontwerp te focussen op duidelijkheid, hiërarchie en eenvoud.
-            </p>
-            UX/UI-vragen die mijn beslissingen stuurden:
-            <ul style="list-style-type: square;">
-            <li>Welke informatie is het belangrijkst voor een reiziger op dat moment?</li>
-            <li>Hoe kan ik de leesbaarheid verbeteren, zeker vanop afstand?</li>
-            </ul>
-            </p>
-            Resultaten van snelle usability checks:
-            Na observatie en feedback bleek dat gebruikers vooral behoefte hadden aan snelle herkenning van vertrekuren, perrons en vertragingen
-
-        
-            
-            <h2>2.OVERZICHTSSCHERM</h2>
-            <p>
-             Wat ik deed:
-             Ik begon met het ontwerpen van het overzichtsscherm (alle vertrekkende treinen). Ik deed opzoekwerk naar icoontjes die ik kon gebruiken om de informatie visueel te ondersteunen.
-
-            </p>
-            Wat ik veranderde en waarom:
-            Ik koos duidelijke, minimalistische iconen (zoals klok, trein, waarschuwing) om de tekst te ondersteunen en de interface minder tekstafhankelijk te maken.
-
-            </p>
-            UX/UI-vraag die mijn beslissingen stuurden:
-            <ul style="list-style-type: square;">
-            <li>Welke iconen begrijpen gebruikers intuïtief?</li>
-            </ul>
-            </p>
-            Resultaten van snelle usability checks:
-            Na mijn eerste schets vroeg ik feedback aan mijn mama. Ze vond sommige iconen niet direct duidelijk. Ik paste die aan naar meer herkenbare versies (zoals standaard OV-pictogrammen).
-
-            <h2>3. PERRONSCHERM (INSPIRATIE UIT FRANKRIJK)</h2>
-            <p>
-             Wat ik deed:
-             Ik ontwierp het perronscherm, geïnspireerd op schermen die ik zag tijdens een treinreis naar Frankrijk.
-
-            </p>
-            Wat ik veranderde en waarom:
-            Ik nam het idee over van een duidelijk onderscheid tussen “volgende trein” en “latere treinen”. Ook maakte ik de tijd en het spoor duidelijker zichtbaar.
-
-            </p>
-            UX/UI-vragen die mijn beslissingen stuurden:
-            <ul style="list-style-type: square;">
-            <li>Hoe kan ik reizigers helpen snel te zien of ze op het juiste perron staan?</li>
-            <li>Welke kleuren en contrasten verhogen de leesbaarheid?</li>
-            </ul>
-            </p>
-            Resultaten van snelle usability checks:
-            Ik vond mijn eerste schets al vrij goed, maar vroeg later opnieuw feedback aan mijn mama. Ze merkte op dat een aantal details ontbraken, dus verfijnde ik de opmaak. Toen ik vastliep, vroeg ik ChatGPT om input over wat een ideaal perronscherm bevat. Daardoor voegde ik extra elementen toe zoals realtime vertragingen en duidelijke statusaanduiding.
-
-
-            <h2> 4. WAGONSCHERM</h2>
-            <p>
-             Wat ik deed:
-             Ik ontwierp een wagonscherm dat toont waar reizigers zich bevinden in de trein.
-
-            </p>
-            Wat ik veranderde en waarom:
-            Ik werkte dit ontwerp uit op basis van een eigen idee, om oriëntatie in de trein te verbeteren (vb. waar de stiltecoupé of fietszone is).
-            </p>
-            UX/UI-vragen die mijn beslissingen stuurden:
-            <ul style="list-style-type: square;">
-            <li>Hoe kan ik reizigers helpen zich beter te oriënteren in de trein?</li>
-            <li>Hoeveel detail is nuttig zonder het scherm te overladen?</li>
-            </ul>
-            </p>
-            Resultaten van snelle usability checks:
-            Ik vroeg feedback aan mijn mama over de leesbaarheid en indeling, en paste de schermen opnieuw aan (meer ruimte tussen secties, grotere labels).
-
-            <h2> 5. QR - code</h2>
-            <p>
-             Wat ik deed:
-             Ik ontwierp een perronscherm waarop reizigers realtime informatie te zien krijgen. Om dit toegankelijker te maken voor anderstaligen, voegde ik een QR-code toe die users konden scannen met hun smartphone om dezelfde informatie op hun gsm te zien, maar dan in een zelfgekozen taal.
-
-            </p>
-            Wat ik veranderde en waarom:
-             De QR-code was te klein en onduidelijk daarom heb ik rechts van het scherm een apart, opvallend kader toegevoegd met een grotere QR-code en een duiding van wat het was, zodat het meteen zichtbaar en begrijpelijk is.
-            </p>
-            UX/UI-vragen die mijn beslissingen stuurden:
-            <ul style="list-style-type: square;">
-            <li>Valt dit element visueel genoeg op zonder de hoofdinfo te verstoren?</li>
-            <li>Is in één oogopslag duidelijk wat het voordeel is voor de gebruiker?</li>
-            </ul>
-            </p>
-            Resultaten van snelle usability checks:
-            De toevoeging van de QR-code bleek logisch en handig volgens de feedback van mijn mama, ze vond dat dat het systeem moderner en gebruiksvriendelijker maakt.
-        
-            <img src="image/schetsen overzichtsscherm.png">
-            <img src="image/schetsen perronscherm.png">
-            <img src="image/schetsen wagonscherm.png">
-            <img src="image/schets qr code.png.png">
-            
-
-                    </p>
-                      </p>
-                </div>
-            </div>
-        </page>
     </div>
+
 </body>
 </html>

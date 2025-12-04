@@ -1,72 +1,71 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML & CSS</title>
-
-    <!-- Link to your CSS file -->
-    <link rel="stylesheet" href="assets/styles.css">
-    <link rel="stylesheet" href="assets/flexboxes.css">
-    <link rel="stylesheet" href="assets/nav.css">
-    <link rel="stylesheet" href="assets/typography.css">
+    <title>Prototyping Logboek - Les 3</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: "Poppins", sans-serif; }
+    </style>
 </head>
-<body>
-    <div class="container">
-        <div class="title">
-            Prototyping tools
-        </div>
-        <h1>Logboek</h1>
-        <div>
-            <ul class="vertical-buttons">
-                <li><a href="week 3.html">les 3</a></li>
-              
+<body class="bg-gray-50 text-gray-800">
 
-            </ul>
-        </div>
-        <page>
-         <h1>Mid-fi prototypes</h1>
-            <p>
-               Wat ik deed:
-               Ik begon met het uittekenen van mijn idee voor het overzichtsscherm. Ik had vooraf al een kleurencombinatie in gedachten en werkte deze uit in een eerste versie van het ontwerp.
-               In de les kreeg ik feedback op de eerste versie, waarna ik meerdere aanpassingen deed aan de hand van visuele tests, feedback en zelfevaluatie. Uiteindelijk kwam ik tot een uitgewerkt eindscherm met duidelijke bestemmingen, vertragingen en structuur.
+    <!-- Navigation -->
+    <nav class="w-full bg-white shadow-md py-4 px-6 flex items-center justify-between fixed top-0 left-0 z-50">
+        <h1 class="text-xl font-bold text-pink-600">Prototyping Tool</h1>
+        <a href="index.html" class="bg-pink-600 text-white px-4 py-2 rounded-lg hover:bg-pink-700 transition">Home</a>
+    </nav>
+
+    <div class="container mx-auto pt-24 px-6 max-w-4xl space-y-8">
+
+        <div class="text-4xl font-bold text-gray-900">Logboek</div>
+        <div class="text-2xl font-semibold text-pink-500">Les 3</div>  
+
+        <div class="bg-white shadow-lg rounded-xl p-8 space-y-6 hover:shadow-2xl transition">
+
+            <h1 class="text-3xl font-bold text-gray-900">Mid-fi prototypes</h1>
+            <p class="leading-relaxed">
+                Deze week paste ik mijn mid-fidelity schermen aan aan de hand van de feedback die ik in de les had gekregen.
             </p>
-            Wat ik veranderde en waarom:
-            <ul style="list-style-type: square;">
-            <li>Icoontjes aangepast:
-             De iconen hadden oorspronkelijk verschillende vullingsstijlen. Op advies van de les heb ik ze aangepast zodat ze visueel één geheel vormen. Dit verhoogt de consistentie en professionaliteit van het ontwerp.</li>
-            <li>Vertraging (“+5”) uitgelijnd:
-             De "+5" stond oorspronkelijk zwevend, wat onrustig oogde. Ik heb dit visueel uitgelijnd met de vertrektijd zodat het direct duidelijk is dat het om een vertraging gaat.</li>
-             <li>Spaties en witruimte verminderd:
-            Er zat te veel ruimte tussen de rijen, wat voor een rommelig geheel zorgde. Ik heb dit strakker gezet voor een compacter en overzichtelijker resultaat.</li>
-             <li>Kleurgebruik herzien:
-            De felle kleuren uit het begin waren visueel onrustig. Ik heb een kleurenpalet samengesteld met meer contrast en duidelijkheid.</li>
-             <li>Nieuwe vorm van informatieblokken getest:
-            De felle kleuren uit het begin waren visueel onrustig. Ik heb een kleurenpalet samengesteld met meer contrast en zachtere tinten die beter leesbaar zijn en rust brengen.</li>
-             <li>Echte bestemmingen toegevoegd:
-            In het eindscherm heb ik de testdata vervangen door realistische bestemmingen, inclusief vertragingen en een geannuleerde trein, om het scherm gebruiksklaar en geloofwaardig te maken.</li>
-            </ul>
+
+            <h2 class="text-2xl font-semibold mt-4">Wat ik deed:</h2>
+            <p class="leading-relaxed">
+                Ze hadden mijn overzichtsscherm in de les feedback gegeven. Ik heb die puntjes genoteerd en aangepast in mijn ontwerp en zo heb ik met die stijl de andere twee schermen opgemaakt. Uiteindelijk kwam ik tot een uitgewerkt eindscherm met duidelijke bestemmingen, vertragingen en structuur. Ik heb mijn kleuren gekozen aan de hand van een kleurenpalet.
             </p>
-            UX/UI-vragen die mijn beslissingen stuurden:
-            <ul style="list-style-type: square;">
-            <li>Hoe zorg ik ervoor dat de belangrijkste informatie (tijd, vertraging, spoor) direct zichtbaar is?</li>
-            <li>Hoeveel kleurvariatie is bruikbaar voordat het afleidt?</li>
+
+            <h2 class="text-2xl font-semibold mt-4">Wat ik veranderde en waarom:</h2>
+            <ul class="list-disc ml-6 text-gray-700">
+                <li><strong>Icoontjes aangepast:</strong> de iconen hadden oorspronkelijk verschillende vullingsstijlen. Op advies van de les heb ik ze aangepast zodat ze visueel één geheel vormen.</li>
+                <li><strong>Vertraging (“+5”) uitgelijnd:</strong> de +5 stond oorspronkelijk zwevend. Ik heb dit uitgelijnd met de vertrektijd zodat meteen duidelijk is dat het om een vertraging gaat.</li>
+                <li><strong>Witruimte verminderd:</strong> er zat te veel ruimte tussen de rijen. Ik heb dit strakker gezet voor een overzichtelijker geheel.</li>
+                <li><strong>Kleurgebruik herzien:</strong> de felle kleuren maakten het druk. Nu heb ik een rustiger kleurenpalet gebruikt met beter contrast.</li>
+                <li><strong>Vorm informatieblokken getest:</strong> ik testte verschillende blokvormen met zachtere tinten voor betere leesbaarheid.</li>
+                <li><strong>Echte bestemmingen toegevoegd:</strong> ik heb testdata vervangen door realistische bestemmingen, vertragingen en een geannuleerde trein.</li>
             </ul>
+
+            <h2 class="text-2xl font-semibold mt-4">UX/UI-vragen:</h2>
+            <ul class="list-disc ml-6 text-gray-700">
+                <li>Hoe zorg ik ervoor dat de belangrijkste informatie (tijd, vertraging, spoor) direct zichtbaar is?</li>
+                <li>Hoeveel kleurvariatie is bruikbaar voordat het afleidt?</li>
+            </ul>
+
+            <h2 class="text-2xl font-semibold mt-4">Usability check:</h2>
+            <p class="leading-relaxed">
+                Na observatie en feedback bleek dat gebruikers vooral behoefte hadden aan snelle herkenning van vertrekuren, perrons en vertragingen.
             </p>
-            Resultaten van snelle usability checks:
-            Na observatie en feedback bleek dat gebruikers vooral behoefte hadden aan snelle herkenning van vertrekuren, perrons en vertragingen.
 
-
-            <img src="image/overzichtsscherm 1.png">
-            <img src="image/overzichtsscherm 2.png">
-            <img src="image/overzichtsscherm definitief.png">
-            <img src="image/perronscherm.png">
-            <img src="image/wagonscherm.png">
-
-
-                    </p>
-                </div>
+            <h2 class="text-2xl font-semibold mt-4">Screenshots</h2>
+            <div class="space-y-4">
+                <img src="image/overzichtsscherm 2.png" class="rounded-lg shadow-md" />
+                <img src="image/overzichtsscherm definitief.png" class="rounded-lg shadow-md" />
+                <img src="image/perronscherm.png" class="rounded-lg shadow-md" />
+                <img src="image/wagonscherm.png" class="rounded-lg shadow-md" />
             </div>
-        </page>
+
+        </div>
     </div>
+
 </body>
 </html>

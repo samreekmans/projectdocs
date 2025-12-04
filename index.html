@@ -1,44 +1,59 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML & CSS</title>
-
-    <!-- Link to your CSS file -->
-    <link rel="stylesheet" href="assets/styles.css">
-    <link rel="stylesheet" href="assets/flexboxes.css">
-    <link rel="stylesheet" href="assets/nav.css">
-    <link rel="stylesheet" href="assets/typography.css">
+    <title>Prototyping Logboek</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: "Poppins", sans-serif; }
+    </style>
 </head>
-<body>
-    <div class="container">
-        <div class="title">
-            Prototyping tools
-        </div>
-        <h1>Logboek</h1>
-        <div>
-            <ul class="vertical-buttons">
-                <li><a href="week 1.html">les 1 & les 2</a></li>
-                <li><a href="week 3.html">les 3</a></li>
-                <li><a href="week 4.html">les 4</a></li>
-                <li><a href="week 5.html">les 5</a></li>
+<body class="bg-gray-50 text-gray-800">
 
-            </ul>
-        </div>
-        <page>
-            <h1>Sam Reekmans</h1>
-           
-            <p> 
-                Hallo hier ga ik mijn proces rond het ontwerpen van de treinschermen vastleggen. 
-            </p>
-             Ik neem je mee in mijn ideeën, keuzes en experimenten, inclusief wat goed gaat en wat minder goed ging. 
-            <p>
+    <!-- Navigation -->
+    <nav class="w-full bg-white shadow-md py-4 px-6 flex items-center justify-between fixed top-0 left-0 z-50">
+        <h1 class="text-xl font-bold text-pink-600">Prototyping Tool</h1>
+    </nav>
 
-             Veel leesplezier!      
-            <p>
-                </div>
-            </div>
-        </page>
+    <div class="container mx-auto pt-24 px-6 max-w-4xl space-y-8">
+
+        <!-- Page Title -->
+        <div class="text-4xl font-bold text-gray-900 text-center">Logboek</div>
+        <div class="text-2xl font-semibold text-pink-500 text-center">Welkom</div>
+
+        <!-- Les Buttons -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8">
+            <a href="week 1.html" class="bg-pink-600 text-white text-lg font-semibold px-6 py-4 rounded-xl shadow-lg text-center hover:bg-pink-700 transition">
+                Les 1
+            </a>
+            <a href="week 2.html" class="bg-pink-600 text-white text-lg font-semibold px-6 py-4 rounded-xl shadow-lg text-center hover:bg-pink-700 transition">
+                Les 2
+            </a>
+            <a href="week 3.html" class="bg-pink-600 text-white text-lg font-semibold px-6 py-4 rounded-xl shadow-lg text-center hover:bg-pink-700 transition">
+                Les 3
+            </a>
+            <a href="week 4.html" class="bg-pink-600 text-white text-lg font-semibold px-6 py-4 rounded-xl shadow-lg text-center hover:bg-pink-700 transition">
+                Les 4
+            </a>
+            <a href="week 5.html" class="bg-pink-600 text-white text-lg font-semibold px-6 py-4 rounded-xl shadow-lg text-center hover:bg-pink-700 transition">
+                Les 5
+            </a>
+            <a href="week 6.html" class="bg-pink-600 text-white text-lg font-semibold px-6 py-4 rounded-xl shadow-lg text-center hover:bg-pink-700 transition">
+                Les 6
+            </a>
+            <a href="week 7.html" class="bg-pink-600 text-white text-lg font-semibold px-6 py-4 rounded-xl shadow-lg text-center hover:bg-pink-700 transition">
+                Les 7
+            </a>
+        </div>
+
+        <!-- Footer / Naam -->
+        <div class="text-center text-gray-500 mt-12">
+            <p>Sam Reekmans</p>
+        </div>
+
     </div>
+
 </body>
 </html>
